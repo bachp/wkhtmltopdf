@@ -50,6 +50,11 @@ unix {
     INSTALLS += manins
 }
 
+macx {
+    CONFIG -= app_bundle
+    CONFIG += x86
+}
+
 INSTALLS += target
 target.path=$$INSTALLBASE/bin
 
